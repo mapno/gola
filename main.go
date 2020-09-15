@@ -18,11 +18,11 @@ const (
 func main() {
 	var (
 		// relPath is the relative path (taken from the working directory) to the file to `tail`.
-		relPath = flag.String("file", "", "file path")
+		relPath = flag.String("f", "", "file path")
 		// c is the number of lines to print.
 		c int
 	)
-	flag.IntVar(&c, "c", 10, "numer of lines")
+	flag.IntVar(&c, "n", 10, "numer of lines")
 	flag.Parse()
 
 	// basePath is the absolute path of the working directory.
